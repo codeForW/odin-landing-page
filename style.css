@@ -6,50 +6,123 @@ body {
   font-family: "roboto", sans-serif;
   display: flex;
   flex-direction: column;
+  height: 100vh;
+  margin: 0;
+}
+
+.header,
+.section.hero,
+.footer {
+background-color: #1F2937;
+color: #F9FAF8;
+}
+
+button.signup,
+.call .container {
+  background-color: #3882F6;
+  border-radius: 8px;
+  color: #F9FAF8;
+}
+
+button {
+  padding: 4px 24px;
 }
 
 /* HEAD */
 .header {
   display: flex;
   justify-content: space-between;
+  gap: 32px;
+}
+
+.header .logo,
+.hero-main,
+.hero .signup,
+.info-header {
+  font-weight: 800;
 }
 
 .head-link {
   display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  gap: 16px;
 }
 
 .header a {
   text-decoration: none;
-}
-
-.head-link {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+  color: #F9FAF8;
 }
 
 /* MIDDLE */
 .middle {
   display: flex;
   flex-direction: column;
+  flex: 1;
 }
 
-/* SECTION HERO */
+/* - SECTION HERO */
 .section.hero {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px;
+  gap: 32px;
 }
 
-/* SECTION INFO */
+.hero-media, .hero .container {
+  /* width: 50%; */
+  flex: 1;
+}
+
+.hero-main, .hero-second, .hero .container {
+  padding: 8px;
+}
+
+.hero-main {
+  font-size: 48px;
+}
+
+.hero-second {
+  font-size: 18px;
+  color: #E5E7EB;
+}
+
+
+/* - SECTION INFO */
 .section.info {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .info-container {
+  margin: 16px;
   display: flex;
+  gap: 32px;
+  /* justify-content: center; */
 }
 
-/* SECTION QUOTE */
+.info-card {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+}
+
+.info-image {
+  border: 2px solid #3882F6;
+  border-radius: 8px;
+  height: 100px;
+  width: 100px;
+}
+
+.info-text {
+  text-align: center;
+}
+
+/* - SECTION QUOTE */
 .quote-text {
   font-style: italic;
 }
@@ -58,9 +131,10 @@ body {
   text-align: right;
 }
 
-/* SECTION CALL  */
-.section.call {
+/* - SECTION CALL  */
+.call .container {
   display: flex;
+  justify-content: center;
 }
 
 
@@ -69,4 +143,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+
+/* END */
+.header,
+.section.hero,
+.section.info,
+.section.quote,
+.section.call,
+.footer {
+  padding: 16px 80px;
 }
