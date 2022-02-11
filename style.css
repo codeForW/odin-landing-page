@@ -1,3 +1,72 @@
 * {
   border: 1px solid lightpink;
 }
+
+body {
+  font-family: "roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+/* HEAD */
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.head-link {
+  display: flex;
+}
+
+.header a {
+  text-decoration: none;
+}
+
+.head-link {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* MIDDLE */
+.middle {
+  display: flex;
+  flex-direction: column;
+}
+
+/* SECTION HERO */
+.section.hero {
+  display: flex;
+}
+
+/* SECTION INFO */
+.section.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-container {
+  display: flex;
+}
+
+/* SECTION QUOTE */
+.quote-text {
+  font-style: italic;
+}
+
+.quote-name {
+  text-align: right;
+}
+
+/* SECTION CALL  */
+.section.call {
+  display: flex;
+}
+
+
+/* FOOTER */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
