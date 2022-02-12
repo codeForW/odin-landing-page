@@ -1,13 +1,17 @@
-* {
+/* Might need to work it with box-sizing enabled instead */
+
+
+/* * {
   border: 1px solid lightpink;
-}
+} */
 
 body {
-  font-family: "roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   display: flex;
   flex-direction: column;
   height: 100vh;
   margin: 0;
+  color: #1F2937;
 }
 
 .header,
@@ -26,6 +30,8 @@ button.signup,
 
 button {
   padding: 4px 24px;
+  cursor: pointer;
+  white-space: nowrap;
 }
 
 /* HEAD */
@@ -39,7 +45,7 @@ button {
 .hero-main,
 .hero .signup,
 .info-header {
-  font-weight: 800;
+  font-weight: 900;
 }
 
 .head-link {
@@ -98,11 +104,16 @@ button {
   align-items: center;
 }
 
+.info-header {
+  font-size: 36px;
+  font-weight: 800;
+}
+
 .info-container {
   margin: 16px;
   display: flex;
   gap: 32px;
-  /* justify-content: center; */
+  justify-content: center;
 }
 
 .info-card {
@@ -124,17 +135,50 @@ button {
 
 /* - SECTION QUOTE */
 .quote-text {
+  font-size: 36px;
   font-style: italic;
+  font-weight: 300;
 }
 
 .quote-name {
+  color: #1F2937;
   text-align: right;
+  font-weight: 900;
+}
+
+.section.quote {
+  background-color: #E5E7EB;
 }
 
 /* - SECTION CALL  */
+.section.call {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .call .container {
   display: flex;
   justify-content: center;
+  align-items: center;
+  padding: 0 40px;
+  /* flex-shrink: 1; */
+}
+
+.calls {
+  padding: 16px;
+}
+
+.calls p, .calls div {
+  margin: 0;
+}
+
+.calls p {
+  font-weight: 900;
+}
+
+.call .signup {
+  border: 2px solid white;
 }
 
 
@@ -143,6 +187,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-weight: 300;
 }
 
 
@@ -153,5 +198,5 @@ button {
 .section.quote,
 .section.call,
 .footer {
-  padding: 16px 80px;
+  padding: 40px 80px;
 }
